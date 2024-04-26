@@ -1,0 +1,270 @@
+* {
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monogram img {
+    width: 200px
+}
+
+.title {
+    display: inline-block;
+    top: 50px;
+    left: 0px;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+#title {
+    position: absolute;
+    top: 112px;
+    width: auto;
+    left: calc(50% - 25%); 
+}
+
+.bar {
+    display: flex;
+}
+
+.bar li {
+    list-style-type: none;
+}
+
+.bar li a {
+    text-decoration: none;
+    margin-left: 12px;
+    background-color: #F2F2F2;
+    color: #828282;
+    font-weight: 900;
+    padding: 12px 35px;
+}
+
+.cities {
+    display: block;
+    position: relative;
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1024px;
+    left: 25%;
+    padding-bottom: 15px;
+}
+
+.cities img {
+    position: relative;
+    width: 950px;
+}
+
+.cityNames {
+    position: relative;
+    left: 5%;
+}
+
+.cityNames a {
+    position: relative;
+    text-decoration: none;
+    margin-right: 50px;
+    background-color: #F2F2F2;
+    color: #828282;
+    font-weight: 900;
+    padding: 12px 20px;
+}
+
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    width: calc(100%/6);    
+}
+
+.galleryDevided {
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1024px;
+    left: 25%;
+    padding-bottom: 30px;
+}
+
+.galleryDevided h1 {
+    font-weight: 900;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryDevided img {
+    width: calc(100%/4);
+    position: relative;
+    left: 10%;
+    padding-right: 25px;
+    margin-top: 15px;
+    height: 175px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.social a img {
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    width: 400px;
+    margin: 0 60px;
+}
+
+.text {
+    font-size: xx-large;
+    color: plum;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 30px;
+    display: block
+}
+
+.contact h1 {
+    font-size: xx-large;
+    color: plum;
+    text-align: center;
+}
+
+.contact form {
+    text-align: center;
+}
+
+.contact form button {
+    background-color: #F2F2F2;
+    color: #828282;
+    font-weight: 900;
+    padding: 12px 35px;
+    margin-top: 20px;
+    margin-right: -450px;
+}
+@media (max-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bar {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+    }
+    .bar li {
+        top: 10px;
+    }
+    .bar li a {
+        white-space: nowrap;
+        padding-left: inherit;
+        padding-right: inherit;
+    }
+    .monogram {
+        align-self: flex-start;
+    }
+    .monogram img{
+        width: 75px;
+    }
+    #title {
+        position: static;
+        width: 100%;
+    }
+    .title {
+        height: auto;
+    }
+    .cities {
+        border: none;
+        box-shadow: none;
+        left: 0; 
+        width: auto;           
+    }
+    .cities img {
+        display: none;
+    }
+    .cityNames {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+        justify-content: center;
+    }
+    .cityNames a {
+        position: relative;
+        display:inline-block;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: calc(100%/3);
+        margin-right: 5px;
+        margin-bottom: 5px;;
+    }
+    .gallery {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap:wrap
+    }
+    .gallery img {
+        width: calc(100%/3);
+        padding: 5px;
+    }
+    .contact form textarea {
+       position: relative;
+       width: 300px;
+       justify-content: center;
+    }
+    .contact form button {
+        margin-right: -200px;
+        padding: 10px 25px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info img {
+        width: 150px;
+    }
+    .galleryDevided {
+        display:flex;
+        flex-direction: column;
+        width: 200px;
+        border:none;
+        box-shadow: none;
+    }
+    .galleryDevided h1 {
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+    .galleryDevided img {
+    position:flex;
+    flex-direction: column; 
+    width: auto;   
+    }
+}
